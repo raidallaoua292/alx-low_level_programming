@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry Point 
+ * main - Entry Point
  *
  * Descriptio : A C program taht prints wrth put function
  *
@@ -10,5 +10,5 @@
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	return (0);
 }
