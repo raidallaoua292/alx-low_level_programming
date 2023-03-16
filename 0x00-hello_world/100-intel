@@ -1,2 +1,19 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE -o 'echo $CFILE | cut -d. -f1'.s
+
+# Get the C file name from the environment variable
+c_file=$CFILE
+
+# Check if the C file exists
+if [ ! -f $c_file ]; then
+  echo "Error: $c_file does not exist"
+  exit 1
+fi
+
+# Generate the output file name by replacing the .c extension with .s
+s_file=${c_file/.c/.s}
+
+# Compile the C code to assembly using the Intel syntax
+gcc -S -masm=intel $c_file -o $s_file
+
+# Print the assembly code to the console
+cat $s_file
