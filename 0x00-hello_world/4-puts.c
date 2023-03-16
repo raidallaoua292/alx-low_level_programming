@@ -3,9 +3,9 @@
 /**
  * main - Entry Point
  *
- * description : A C program taht prints wrth put function
+ * description: A C program taht prints wrth put function
  *
- * Return : Alawys 0 (Success)
+ * Return: Alawys 0 (Success)
 */
 
 int main(void)
