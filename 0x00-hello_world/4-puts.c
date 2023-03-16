@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
  * main - Entry Point
  *
- * Descriptio : A C program taht prints wrth put function
+ * description : A C program taht prints wrth put function
  *
  * Return : Alawys 0 (Success)
 */
