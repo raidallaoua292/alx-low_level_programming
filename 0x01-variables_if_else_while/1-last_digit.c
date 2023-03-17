@@ -31,7 +31,7 @@ int main(void)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
 
 	else
-		printf("Last digit of 809065140 is 0 and is 0\n", n, last);
+		printf("Last digit of %d is %d and is 0\n", n, last);
 
 	return (0);
 }
