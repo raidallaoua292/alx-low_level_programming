@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: this program prints information about the last digit of a random number
+ * Description: this program prints information about the last digit 
  *
  * Return: Always 0 (Success)
  */
