@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /* more headers goes there */
 
@@ -12,6 +12,12 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putchar";
+	int ch;
+
+	for (ch = 0; ch < sizeof(str); ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
+
 	return (0);
 }
