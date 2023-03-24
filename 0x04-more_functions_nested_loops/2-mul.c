@@ -1,12 +1,16 @@
 #include "main.h"
 
 /**
- *mul - Short description, single line
- * @c: contains value to be compared
- * Return: 0.
+ * mul - multiplies two integers
+ * @a: int to be multiplied to b
+ * @b: int to be multiplied to a
+ * Return: the result of the operation
  */
 
 int mul(int a, int b)
 {
-	return (a * b);
+	int c;
+
+	c = a + b;
+	return (c);
 }
