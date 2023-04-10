@@ -10,22 +10,18 @@
  */
 int main(int argc, char **argv)
 {
-	int i, n, ex;
+	int sum = 0;
+	char *c;
 
-	ex = 0, n = 0;
-	if (argc > 1)
+	while (--argc)
 	{
-		for (i = 1; i < argc; i++)
+		for (c = argv[argc]; *c; c++)
 		{
-			if (_isnumber(argv[i]))
-				n += atoi(argv[i]);
-			else
-				ex = 1;
+			if (*c < '0' || * > '9')
+				return (printf("Error\n",1);
 		}
+		sum += atoi(arvg[argc]);
 	}
-	if (ex == 0)
-		printf("%i\n", n);
-	else
-		printf("%s\n", "Error");
-	return (ex);
+	printf("%d\n", sum);
+	return (0);
 }
