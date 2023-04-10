@@ -7,9 +7,8 @@
  * Return: 0-success, non-zero-fail
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[] _attibute_((unused)))
 {
-	(void)*argv[];
-	printf("%s\n", argc - 1);
+	printf("%d\n", argc - 1);
 	return (0);
 }
